@@ -16,8 +16,27 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css" integrity="sha512-+EoPw+Fiwh6eSeRK7zwIKG2MA8i3rV/DGa3tdttQGgWyatG/SkncT53KHQaS5Jh9MNOT3dmFL0FjTY08And/Cw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
+    <section id="topbar" class="d-none d-lg-block" style="background-color: #f8f9fa; padding: 10px 0;">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6 contact-info">
+                    <i class="fa-solid fa-envelope" style="font-size: 20px; color: #007bff;"></i>
+                    <a href="mailto:sjhskurumannu2008@gmail.com" class="no-decoration"  style="color: #007bff;">sjhskurumannu2008@gmail.com</a>
+                    <i class="fa-solid fa-phone" style="font-size: 20px; color: #007bff;"></i>
+                    <a href="tel:+917025192324" class="no-decoration" style="color: #007bff;">7025192324</a>&nbsp; &nbsp;&nbsp;
+                </div>
+                <div class="col-md-6 social-links text-right">
+                    <a href="https://www.youtube.com/channel/UCN-AG7OIlPkFZkVm2uDm_Vw" class="youtube no-decoration"><i class="fa-brands fa-youtube"></i> YouTube</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+      
+      
+      
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container">
             <a class="navbar-brand" href="#">St. John's High School</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -497,6 +516,29 @@
       }
     });
     </script>
+    <button onclick="goToTop()" id="goToTopBtn" title="Go to top"><i class="fas fa-arrow-up"></i></button>
+<script>
+    // Get the button
+var goToTopBtn = document.getElementById("goToTopBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        goToTopBtn.style.display = "block";
+    } else {
+        goToTopBtn.style.display = "none";
+    }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function goToTop() {
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+
+</script>
 </body>
 
 </html>

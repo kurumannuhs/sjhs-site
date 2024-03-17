@@ -208,3 +208,26 @@ body.loaded #preloader {
     border-radius: 10px;
     margin-bottom: 20px;
   }
+
+  #goToTopBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 50%;
+}
+
+#goToTopBtn:hover {
+    background-color: #555;
+}
+a.no-decoration {
+  text-decoration: none;
+}
